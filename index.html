@@ -42,8 +42,8 @@
 <body class="font-Manrope">
   <!-- Navbar and Banner section -->
   <header
-    class="lg:px-20 px-5 pt-12 bg-gradient-to-r from-gray-50 to-gray-50">
-    <nav>
+    class="pt-12 bg-gradient-to-r from-gray-50 to-gray-50">
+    <nav class="px-5 md:container mx-auto md:px-5">
       <div class="navbar">
         <div class="navbar-start">
           <div>
@@ -52,7 +52,7 @@
           </div>
           <a class="btn btn-ghost text-3xl">Rinterio</a>
         </div>
-        <div class="navbar-center hidden lg:flex lg:items-center lg:justify-center">
+        <div class="navbar-center hidden lg:flex lg:items-center lg:justify-center lg:pr-24">
           <ul class="menu menu-horizontal px-1">
             <li><a class="font-bold">Home</a></li>
             <li><a class="text-[#737373]">Services</a></li>
@@ -61,7 +61,7 @@
             <li><a class="text-[#737373]">Contact Us</a></li>
           </ul>
         </div>
-        <div class="navbar-end gap-4">
+        <div class="navbar-end gap-3 lg:gap-5">
           <!-- Search button -->
           <button
             class="hidden lg:block btn btn-ghost btn-circle border border-5 bg-[#FFFFFF] border-gray-400 rounded-full w-12 h-12">
@@ -84,16 +84,16 @@
     </nav>
 
     <!-- A burn house section -->
-    <section class="mt-12">
-      <div class="flex flex-col justify-center items-center ">
+    <section class="mt-12 md:container mx-auto md:px-10">
+      <div class="flex flex-col justify-center items-center px-5">
         <div>
           <img class="lg:px-36 px-6" src="./assets/banner.png" alt="">
         </div>
-        <div class="text-center space-y-6">
-          <h1 class="lg:text-5xl text-3xl font-bold ">A barn house of this design has a <span class="hidden lg:inline"><br></span> striking appearance</h1>
+        <div class="text-center space-y-6 md:mb-28 lg:mb-28 mb-10">
+          <h1 class="lg:text-5xl text-4xl font-extrabold mt-4">A barn house of this design has a <span class="hidden lg:inline"><br></span> striking appearance</h1>
           <p class="text-gray-500">This barn house stands out with its modern twist on classic charm. Featuring clean lines, open interiors, and plenty of <span class="hidden lg:inline"><br></span> natural light, it perfectly blends rustic and contemporary styles for a striking and stylish home.</p>
           <!-- Button -->
-          <button class="btn w-full lg:w-1/4 bg-[#ABEF5F80] rounded-full font-bold text-xl px-6">
+          <button class="btn w-full lg:w-1/4 bg-[#ABEF5F80] rounded-full font-bold text-xl px-6 ">
             View Details
             <div>
               <i
@@ -111,11 +111,69 @@
 
   <!-- Main section -->
   <main>
-    
+    <!-- We design thoughtful section & Our Latest Portfolio-->
+    <section class="bg-[#F4F4F4]">
+      <!-- Our Latest Portfolio section -->
+      <div
+        class="relative container mx-auto px-5 md:px-20 md:py-24 py-8 flex flex-col lg:flex-row md:items-center lg:items-stretch gap-5 h-full lg:h-auto">
+        <!-- Vector -->
+        <div class="absolute top-9 left-5 hidden lg:block"><img src="./assets/Vector.png" alt=""></div>
+        <!-- Left Section: Text and Cards -->
+        <div class="lg:w-1/2 flex flex-col justify-between space-y-5">
+          <button
+            class="btn bg-white text-black hover:bg-gray-200 rounded-full font-bold shadow-md md:px-6 md:py-2 flex items-center px-3 py-1 w-auto mx-auto md:mx-0 self-center md:self-start">
+            <i class="fa-solid fa-arrow-right h-4 w-4 flex items-center justify-center mr-1"></i> About Us
+          </button>
+          <!-- Heading -->
+          <h1 class="md:text-4xl lg:text-4xl text-2xl lg:text-start text-center font-extrabold leading-tight">We design thoughtful,
+            <br> liveable spaces
+          </h1>
+
+          <!-- Description -->
+          <p class="text-gray-600 text-lg lg:text-start text-center">The barn house captivates with its blend of rustic charm and
+            modern
+            sophistication, featuring weathered wood, sleek metal accents.</p>
+
+          <!-- Cards -->
+          <div class="space-y-5">
+            <!-- Card 1: Commercial -->
+            <div class="flex items-center bg-white p-6 rounded-lg shadow-lg gap-5">
+              <div>
+                <img src="./assets/commercial.png" alt="Commercial" class="w-12 h-12 object-contain">
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold">Commercial</h4>
+                <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+
+            <!-- Card 2: Residential -->
+            <div class="flex items-center bg-white p-6 rounded-lg shadow-lg gap-5">
+              <div>
+                <img src="./assets/residential.png" alt="Residential" class="w-12 h-12 object-contain">
+              </div>
+              <div>
+                <h4 class="text-xl font-semibold">Residential</h4>
+                <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Section: Image -->
+        <div class="lg:w-1/2 h-full lg:h-auto">
+          <img src="./assets/Rectangle.png" alt="Modern House" class="w-full h-full object-cover rounded-2xl">
+        </div>
+        
+      </div>
+      <!-- We design thoughtful section -->
+      <div></div>
+    </section>
   </main>
 
   <!-- Footer section -->
-  <footer></footer>
+  <footer>
+    
+  </footer>
 </body>
 
 </html>
