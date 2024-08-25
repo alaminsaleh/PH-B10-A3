@@ -313,7 +313,7 @@
       class="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center m-2 md:my-3 w-[97%] md:w-[98%] mx-auto"
       style="background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./assets/bg.jpg');">
 
-      <div class="relative w-full max-w-3xl p-8 rounded-lg space-y-4">
+      <div class="relative w-full max-w-4xl p-8 rounded-lg space-y-4">
         <div class="space-y-6 flex flex-col items-center justify-center">
           <button
             class="btn bg-[#ABEF5F33] text-black hover:bg-gray-200 rounded-full font-bold shadow-md md:px-6 md:py-2 flex items-center px-3 py-1 md:mx-0 self-center border-none">
@@ -330,15 +330,17 @@
         <form class="space-y-5">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input type="text" placeholder="First Name*"
-              class="input input-bordered w-full rounded-full border-none p-5" />
+              class="input input-bordered w-full rounded-full border border-3 border-gray-100 p-5 bg-[#FFFFFF]" />
             <input type="text" placeholder="Last Name*"
-              class="input input-bordered w-full rounded-full border-none p-5" />
+              class="input input-bordered w-full rounded-full border border-3 border-gray-100 p-5" />
             <input type="tel" placeholder="Phone Number*"
-              class="input input-bordered w-full rounded-full border-none p-5" />
-            <input type="email" placeholder="Email*" class="input input-bordered w-full rounded-full border-none p-5" />
+              class="input input-bordered w-full rounded-full border border-3 border-gray-100 p-5" />
+            <input type="email" placeholder="Email*"
+              class="input input-bordered w-full rounded-full border border-3 border-gray-100 p-5" />
           </div>
 
-          <textarea class="rounded-2xl border-none textarea textarea-bordered w-full h-40 mt-6 resize-none"
+          <textarea
+            class="rounded-2xl border border-3 border-gray-100 textarea textarea-bordered w-full h-40 mt-6 resize-none"
             placeholder="Write your message here"></textarea>
 
           <div class="text-center mt-6">
@@ -393,8 +395,27 @@
   </main>
 
   <!-- Footer section -->
-  <footer>
-    
+  <footer class=" bg-[#F4F4F4] text-base-content pt-3">
+    <div class="footer footer-center bg-black text-base-content md:py-24 py-16 px-8">
+      <div>
+        <button class="btn bg-black border-none text-3xl bg-none gap-4"><i
+            class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black h-8 w-8 rounded-full flex items-center justify-center -rotate-45"></i>
+          <span class="text-white">Rinterio</span></button>
+        <p class="text-[#737373] font-medium	">The barn house captivates with its blend of rustic charm and modern
+          sophistication, <span class="hidden lg:inline"><br></span> featuring weathered wood, sleek metal accents.</p>
+      </div>
+      <nav class="grid grid-flow-row md:grid-flow-col gap-8 md:gap-24">
+        <a class="link link-hover text-[#E9E9E9]">Home</a>
+        <a class="link link-hover text-[#E9E9E9]">Service</a>
+        <a class="link link-hover text-[#E9E9E9]">Portfolio</a>
+        <a class="link link-hover text-[#E9E9E9]">Blogs</a>
+        <a class="link link-hover text-[#E9E9E9]">Contact Us</a>
+      </nav>
+
+      <a class=" inline-flex btn border-none bg-[#ABEF5F] rounded-full font-bold">Book Consult <i
+          class="fa-solid fa-arrow-right bg-black text-white h-7 w-7 rounded-full flex items-center justify-center -rotate-45"></i>
+      </a>
+    </div>
   </footer>
 </body>
 
